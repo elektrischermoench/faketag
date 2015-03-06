@@ -10,7 +10,7 @@ This emulator is processing apdu commands based on simple JSON files. Use the fo
 ```json
 [
 	{"sent":"80CA9F7F00","received":"6800"},
-  {"sent":"12345","received":"12345"}
+  	{"sent":"12345","received":"12345"}
 ]
 ```
 
