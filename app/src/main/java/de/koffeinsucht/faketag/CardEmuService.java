@@ -56,7 +56,7 @@ public class CardEmuService extends HostApduService {
             JSONArray jsonArray = new JSONArray(json); //jsonBuilder.toString());
             for (int index = 0; index < jsonArray.length(); index++) {
                 //add values to map
-                cmdMap.put(jsonArray.getJSONObject(index).getString("sent"), jsonArray.getJSONObject(index).getString("received"));
+                cmdMap.put(jsonArray.getJSONObject(index).getString("request"), jsonArray.getJSONObject(index).getString("response"));
             }
         } catch (FileNotFoundException e) {
             Log.e("jsonFile", "file not found");
