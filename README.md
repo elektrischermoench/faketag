@@ -25,6 +25,8 @@ This is a great and useful tool originally created by John Zweng.
 See here: https://github.com/kairenken/bankomatinfos 
 Just activate the "dump nfc tag function" under settings. 
 
-<img src="(https://github.com/kairenken/faketag/blob/master/img/Screenshot_2015-03-09-09-42-56.png" alt="disabled NFC" style="width: 200px;"/>
+<img src="https://github.com/kairenken/faketag/blob/master/img/Screenshot_2015-03-09-09-42-56.png" alt="disabled NFC" width="300"/>
+<img src="https://github.com/kairenken/faketag/blob/master/img/Screenshot_2015-03-09-09-43-02.png" alt="enabled NFC" width="300"/>
 
-![NFC enabled](https://github.com/kairenken/faketag/blob/master/img/Screenshot_2015-03-09-09-43-02.png =10x)
+
+
