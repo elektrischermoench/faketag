@@ -9,8 +9,8 @@ This emulator is processing apdu commands based on simple JSON files. Use the fo
 
 ```json
 [
-	{"request":"80CA9F7F00","response":"6800"},
-  	{"request":"12345","respone":"12345"}
+	{"request":"ODBDQTlGN0YwMA==","response":"NjgwMA=="},
+  	{"request":"MTIzNDU=","respone":"MTIzNDU="}
 ]
 ```
 
