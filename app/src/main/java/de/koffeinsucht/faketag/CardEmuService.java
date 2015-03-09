@@ -1,8 +1,8 @@
 package de.koffeinsucht.faketag;
 
-import android.content.Intent;
 import android.nfc.cardemulation.HostApduService;
 import android.os.Bundle;
+import android.util.Base64;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -56,7 +56,9 @@ public class CardEmuService extends HostApduService {
             JSONArray jsonArray = new JSONArray(json); //jsonBuilder.toString());
             for (int index = 0; index < jsonArray.length(); index++) {
                 //add values to map
-                cmdMap.put(jsonArray.getJSONObject(index).getString("request"), jsonArray.getJSONObject(index).getString("response"));
+                byte[] request = Base64.decode(jsonArray.getJSONObject(index).getString("request"), Base64.DEFAULT);
+                byte[] response = Base64.decode(jsonArray.getJSONObject(index).getString("response"), Base64.DEFAULT);
+                cmdMap.put(request.toString(), response.toString());
             }
         } catch (FileNotFoundException e) {
             Log.e("jsonFile", "file not found");
