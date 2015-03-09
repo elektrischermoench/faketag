@@ -24,5 +24,5 @@ I've added the functionality to dump your credit card into the faketag JSON file
 This is a great and useful tool originally created by John Zweng.
 See here: https://github.com/kairenken/bankomatinfos 
 Just activate the "dump nfc tag function" under settings. 
-![NFC disabled](kairenken.github.com/repository/img/Screenshot_2015-03-09-09-42-56.png)
-![NFC enabled](kairenken.github.com/repository/img/Screenshot_2015-03-09-09-43-02.png)
+![NFC disabled](https://github.com/kairenken/faketag/blob/master/img/Screenshot_2015-03-09-09-42-56.png)
+![NFC enabled](https://github.com/kairenken/faketag/blob/master/img/Screenshot_2015-03-09-09-43-02.png)
