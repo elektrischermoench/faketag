@@ -14,7 +14,7 @@ This emulator is processing apdu commands based on simple JSON files. Use the fo
 ]
 ```
 
-The response values must be base64 encoded at the moment as they were dumped with my fork if bakomatinfos. See "How to create JSON dump" below.
+The responses are byte values which were dumped with my fork of bakomatinfos. See "How to create JSON dump" below.
 
 So if you sniff sessions from real world nfc-tags you can generate a json-file like the above and
 your able to emulate this nfc tag. At the moment only statically tags without any random data are 
