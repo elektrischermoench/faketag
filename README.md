@@ -3,6 +3,15 @@
 Goal of this project is to create a simple android based emulator for nfc tags.
 Processing of APDU's is based on a simple json file.
 
+##Backgroud
+
+This days more and more banks starts sending NFC-enabled credit cards to their customers. I've just reveived 
+a NFC credit card from my bank too. This was my starting point for own investigations about nfc technology used
+by banks. My first thougts were: "They will use some state of the art Crypto-Processors for the tags". 
+Rechering in the internet proved me wrong. Everything is just plaintext. My decision was to start this 
+project to have an easy way of demonstraiting vulnerabilities in old-fashioned nfc tags which are used in payment systems.
+This is not the first project to show this vulnerabilities and it won't be the last one.
+
 ##JSON file format
 
 This emulator is processing apdu commands based on simple JSON files. Use the following format:
@@ -25,7 +34,7 @@ You have to place the file into your ExternalStorageDirectory which you'll find 
 Environment.getExternalStorageDirectory()
 ```
 
-use ```json faketag.json``` as filename. 
+use ```faketag.json``` as filename. 
 
 ### How to create JSON dump?
 
