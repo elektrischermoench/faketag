@@ -3,16 +3,10 @@ package de.koffeinsucht.faketag;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
+git c
 import android.view.Menu;
 import android.view.MenuItem;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.HashMap;
 
 
@@ -29,12 +23,9 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // start file selection here
-        //parseJSONFile();
-
         // TODO: start service here?
         Intent emuIntent = new Intent(this, CardEmuService.class);
-        emuIntent.putExtra("foo", cmdMap);
+        //emuIntent.putExtra("foo", cmdMap);
         startService(emuIntent);
     }
 
@@ -60,6 +51,5 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 
 }
