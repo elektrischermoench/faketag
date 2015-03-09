@@ -20,6 +20,13 @@ So if you sniff sessions from real world nfc-tags you can generate a json-file l
 your able to emulate this nfc tag. At the moment only statically tags without any random data are 
 supported.
 
+You have to place the file into your ExternalStorageDirectory which you'll find with using:
+```Java
+Environment.getExternalStorageDirectory()
+```
+
+use ```json faketag.json``` as filename. 
+
 ### How to create JSON dump?
 
 I've added the functionality to dump your credit card into the faketag JSON file format with bankomatinfos. 

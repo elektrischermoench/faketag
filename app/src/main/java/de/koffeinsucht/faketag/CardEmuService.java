@@ -2,12 +2,15 @@ package de.koffeinsucht.faketag;
 
 import android.nfc.cardemulation.HostApduService;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Base64;
 import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -45,7 +48,8 @@ public class CardEmuService extends HostApduService {
         try
         {
             //Load File
-            InputStream jsonReader = this.getResources().openRawResource(R.raw.example);
+            File jsonfile = new File(Environment.getExternalStorageDirectory(), "faketag.json");
+            InputStream jsonReader = new FileInputStream(jsonfile);
             int size = jsonReader.available();
 
             byte[] buffer = new byte[size];
