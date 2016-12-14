@@ -40,11 +40,11 @@ use ```faketag.json``` as filename.
 
 I've added the functionality to dump your credit card into the faketag JSON file format with bankomatinfos. 
 This is a great and useful tool originally created by John Zweng.
-See here: https://github.com/kairenken/bankomatinfos 
+See here: https://github.com/elektrischermoench/bankomatinfos 
 Just activate the "dump nfc tag function" under settings. 
 
-<img src="https://github.com/kairenken/faketag/blob/master/img/Screenshot_2015-03-09-09-42-56.png" alt="disabled NFC" width="300"/>
-<img src="https://github.com/kairenken/faketag/blob/master/img/Screenshot_2015-03-09-09-43-02.png" alt="enabled NFC" width="300"/>
+<img src="https://github.com/elektrischermoench/faketag/blob/master/img/Screenshot_2015-03-09-09-42-56.png" alt="disabled NFC" width="300"/>
+<img src="https://github.com/elektrischermoench/faketag/blob/master/img/Screenshot_2015-03-09-09-43-02.png" alt="enabled NFC" width="300"/>
 
 
 
